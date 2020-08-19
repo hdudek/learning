@@ -1,0 +1,18 @@
+print("kalkulatorek")
+a = int(input("Podaj_składnik_1:"))
+b = int(input("Podaj_składnik_2:"))
+x = input("Wybierz operator:(+,-,*,/)")
+
+operator = {"+": a+b, "-": a-b, "*": a*b, "/": a/b}
+print("Wynik to:")
+if x == "+":
+    print(operator["+"])
+elif x == "-":
+    print(operator["-"])
+elif x == "*":
+    print(operator["*"])
+elif x == "/":
+    print(operator["/"])
+else:
+    print("Błąd: Nie wybrano operatora: (+) lub: (-) lub: (*) albo: (/))")
+print()
